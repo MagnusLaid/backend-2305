@@ -1,3 +1,5 @@
+    console.log('midagimidagi')
+    
     const express = require('express');
     const app = express();
 
