@@ -8,19 +8,19 @@
 let navItemsHtml = document.querySelector('#navItems');
 let navItemsList = [
   {
-    pealkiri: 'Home',
+    pealkiri: 'Pealeht',
     viide: 'index.html'
   },
   {
-    pealkiri: 'Upcoming treks',
+    pealkiri: 'Tulevad maktad',
     viide: 'treks.html'
   },
   {
-    pealkiri: 'Treks for family',
+    pealkiri: 'Pildid',
     viide: 'family.html'
   },
   {
-    pealkiri: 'Contact us',
+    pealkiri: 'Kontakt',
     viide: 'contact.html'
   }
 ];
