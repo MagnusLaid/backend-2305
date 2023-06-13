@@ -15,8 +15,8 @@
     <div class="pais">
       <nav>
         <div class="vasak">
-          <img src="pildid/klubilogo.png" alt="Klubi logo" />
-          <div>Hiking<br>club</div>
+          <img src="/Users/magnuslaid/Documents/GitHub/backend-2305/Matkaklubi/Klubilogo.png" alt="Klubi logo" />
+          <div>Matka<br>klubi</div>
         </div>
         <div id="navItems" class="parem">
         </div>
@@ -28,20 +28,20 @@
   </div>
   <script src="script.js"></script>
   <script>
-    // const API_URL = 'https://mihkli-matkad-app.onrender.com';
+    // const API_URL = 'https://magnuse-matkad-app.onrender.com/';
     const API_URL = 'http://localhost:10000';
     const matkad = document.querySelector('#matkad');
-    matkad.innerHTML = 'Loading...'
+    
 
     async function getTreks() {
-      try {
+    try {
         const treks = await fetch(`${API_URL}/api/treks`).then((response => response.json()));
         console.log(treks);
         for (let trek of treks) {
-          matkad.innerHTML = `
+          matkad.innerHTML += `
             <div class="matk">
               <div class="pilt">
-                <img src="${trek.image_url}">
+                <img src=${trek.image_url}
               </div>
               <div class="sisu">
                 <h3>${trek.name}</h3>
@@ -70,7 +70,7 @@
       }
     }
 
-    getTreks();
+   getTreks();
 
   </script>
 </body>

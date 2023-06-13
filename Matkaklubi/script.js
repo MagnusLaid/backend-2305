@@ -15,14 +15,14 @@ let navItemsList = [
     pealkiri: 'Tulevad maktad',
     viide: 'treks.html'
   },
-  {
-    pealkiri: 'Pildid',
+  /* {
+    pealkiri: 'Matkad perele',
     viide: 'family.html'
   },
   {
     pealkiri: 'Kontakt',
     viide: 'contact.html'
-  }
+  }*/
 ];
 
 for (let i = 0; i < navItemsList.length; i++) {
